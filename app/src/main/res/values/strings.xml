@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TinySMS</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="textView1">电话</string>
+    <string name="textView2">短信</string>
+    <string name="button"> >> </string>
+    <string name="message1">输入电话号码</string>
+    <string name="message2">输入信息内容</string>
+
+</resources>
