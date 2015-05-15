@@ -34,15 +34,15 @@ public class MainActivity extends ActionBarActivity {
                 SmsManager manager =SmsManager.getDefault();
                 ArrayList<String> texts=manager.divideMessage(message);
 
-                for(String temp:texts)
-             //   if(phone.length()>0 && message.length()>0){
+                if(phone.length()>0 && message.length()>0)
+                {
+                    for(String temp:texts)
                     manager.sendTextMessage(phone,null,temp,null,null);
-
                     Toast.makeText(MainActivity.this,"send OK!",Toast.LENGTH_LONG).show();
-               // }
-                //else {
-                  //  Toast.makeText(MainActivity.this,"invalid input!",Toast.LENGTH_LONG).show();
-               // }
+                }
+                else {
+                   Toast.makeText(MainActivity.this,"invalid input!",Toast.LENGTH_LONG).show();
+                }
             }
         });
     }
